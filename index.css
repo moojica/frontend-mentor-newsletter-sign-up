@@ -64,10 +64,27 @@ End CSS reset
   --default-font-size: 16px;
   --fw-medium: 400;
   --fw-bold: 700;
+
+  /* Styling */
+  --border-radius: 0.625rem;
 }
 
 body {
   font-family: var(--default-font-family);
   font-size: var(--default-font-size);
   background-color: var(--charcoal-grey);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  width: 90%;
+  padding: 1rem;
 }
