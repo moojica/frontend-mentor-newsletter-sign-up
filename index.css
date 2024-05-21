@@ -156,9 +156,13 @@ input {
   margin-bottom: 1.5rem;
 }
 
-button {
+.button {
   background-color: var(--dark-slate-grey);
   color: var(--white);
   font-weight: var(--fw-bold);
   border: 0;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #fc6076, var(--tomato));
 }
