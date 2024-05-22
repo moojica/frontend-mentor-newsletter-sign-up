@@ -1,9 +1,19 @@
 const form = document.querySelector('.newsletter-form');
+const invalidEmailSpan = document.getElementById('invalid-email-text');
+const input = document.getElementById('email');
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  console.log(validEmail());
+  if (!validEmail()) {
+    invalidEmailSpan.classList.add('invalid');
+    invalidEmailSpan.classList.remove('hidden');
+    input.classList.add('invalid');
+  } else {
+    invalidEmailSpan.classList.remove('invalid');
+    invalidEmailSpan.classList.add('hidden');
+    input.classList.remove('invalid');
+  }
 });
 
 function validEmail() {
