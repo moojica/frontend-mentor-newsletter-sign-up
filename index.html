@@ -29,7 +29,7 @@
     <main>
       <!-- Sign-up form start -->
       <div class="card">
-        <div class="left hidden">
+        <div class="left" id="left-card">
           <section>
             <header>
               <h1 class="heading">Stay updated!</h1>
@@ -62,7 +62,7 @@
             </form>
           </section>
         </div>
-        <div class="right hidden">
+        <div class="right" id="right-card">
           <figure>
             <picture>
               <source
@@ -81,7 +81,7 @@
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
-        <section class="success-page">
+        <div class="hidden" id="success-page">
           <figure>
             <img
               src="./assets/images/icon-success.svg"
@@ -96,8 +96,10 @@
             <strong>ash@loremcompany.com</strong>. Please open it and click the
             button inside to confirm your subscription.
           </p>
-          <button class="button success-page-button">Dismiss message</button>
-        </section>
+          <button class="button dissmiss-btn" id="dissmiss-btn">
+            Dismiss message
+          </button>
+        </div>
       </div>
     </main>
 
