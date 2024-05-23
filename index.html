@@ -29,7 +29,7 @@
     <main>
       <!-- Sign-up form start -->
       <div class="card">
-        <div class="left">
+        <div class="left hidden">
           <section>
             <header>
               <h1 class="heading">Stay updated!</h1>
@@ -56,13 +56,13 @@
               >
 
               <input id="email" placeholder="email@company.com" />
-              <button class="submit-btn" type="submit">
+              <button class="button" type="submit">
                 Subscribe to monthly newsletter
               </button>
             </form>
           </section>
         </div>
-        <div class="right">
+        <div class="right hidden">
           <figure>
             <picture>
               <source
@@ -81,10 +81,23 @@
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
+        <section class="success-page">
+          <figure>
+            <img
+              src="./assets/images/icon-success.svg"
+              alt="Image of white checkmark in an orange circle"
+              class="checkmark"
+            />
+          </figure>
 
-        <!-- Thanks for subscribing! A confirmation email has been sent to
-        ash@loremcompany.com. Please open it and click the button inside to
-        confirm your subscription. Dismiss message -->
+          <h1 class="heading success-page-heading">Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <strong>ash@loremcompany.com</strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <button class="button success-page-button">Dismiss message</button>
+        </section>
       </div>
     </main>
 

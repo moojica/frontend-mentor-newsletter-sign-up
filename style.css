@@ -156,14 +156,14 @@ input {
   margin-bottom: 1.5rem;
 }
 
-.submit-btn {
+.button {
   background-color: var(--dark-slate-grey);
   color: var(--white);
   font-weight: var(--fw-bold);
   border: 0;
 }
 
-.submit-btn:hover {
+.button:hover {
   background-image: linear-gradient(to right, #fc6076, var(--tomato));
 }
 
@@ -184,6 +184,21 @@ input.invalid {
   outline: 1px solid var(--tomato);
   border: none;
   background-color: hsl(4, 100%, 67%, 20%);
+}
+
+.success-page {
+  display: grid;
+  padding: 2.5rem;
+  gap: 1rem;
+  max-width: 29rem;
+}
+
+.success-page-heading {
+  line-height: 1;
+}
+
+.checkmark {
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 779px) and (max-width: 900px) {
@@ -234,5 +249,16 @@ input.invalid {
   }
   .card {
     border-radius: 0;
+  }
+
+  .success-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .success-page p {
+    margin-bottom: 15rem;
   }
 }
