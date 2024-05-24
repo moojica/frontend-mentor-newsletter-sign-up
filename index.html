@@ -28,8 +28,8 @@
   <body>
     <main>
       <!-- Sign-up form start -->
-      <div class="card">
-        <div class="left" id="left-card">
+      <div class="card" id="newsletter">
+        <div class="left">
           <section>
             <header>
               <h1 class="heading">Stay updated!</h1>
@@ -62,7 +62,7 @@
             </form>
           </section>
         </div>
-        <div class="right" id="right-card">
+        <div class="right">
           <figure>
             <picture>
               <source
@@ -77,29 +77,29 @@
             </picture>
           </figure>
         </div>
+      </div>
 
-        <!-- Sign-up form end -->
+      <!-- Sign-up form end -->
 
-        <!-- Success message start -->
-        <div class="hidden" id="success-page">
-          <figure>
-            <img
-              src="./assets/images/icon-success.svg"
-              alt="Image of white checkmark in an orange circle"
-              class="checkmark"
-            />
-          </figure>
+      <!-- Success message start -->
+      <div class="card hidden" id="success-page">
+        <figure>
+          <img
+            src="./assets/images/icon-success.svg"
+            alt="Image of white checkmark in an orange circle"
+            class="checkmark"
+          />
+        </figure>
 
-          <h1 class="heading success-page-heading">Thanks for subscribing!</h1>
-          <p>
-            A confirmation email has been sent to
-            <strong>ash@loremcompany.com</strong>. Please open it and click the
-            button inside to confirm your subscription.
-          </p>
-          <button class="button dissmiss-btn" id="dissmiss-btn">
-            Dismiss message
-          </button>
-        </div>
+        <h1 class="heading success-page-heading">Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <strong id="user-email"></strong>. Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+        <button class="button dissmiss-btn" id="dissmiss-btn">
+          Dismiss message
+        </button>
       </div>
     </main>
 

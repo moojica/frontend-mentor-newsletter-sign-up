@@ -2,9 +2,9 @@ const form = document.querySelector('.newsletter-form');
 const invalidEmailSpan = document.getElementById('invalid-email-text');
 const input = document.getElementById('email');
 const dissmissButton = document.getElementById('dissmiss-btn');
-const leftCard = document.getElementById('left-card');
-const rightCard = document.getElementById('right-card');
 const successPage = document.getElementById('success-page');
+const newsletter = document.getElementById('newsletter');
+const userEmail = document.getElementById('user-email');
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -18,16 +18,18 @@ form.addEventListener('submit', function (e) {
     invalidEmailSpan.classList.add('hidden');
     input.classList.remove('invalid');
 
+    const email = input.value;
+
+    userEmail.innerText = email;
+
     successPage.classList.add('success-page');
-    leftCard.classList.add('hidden');
-    rightCard.classList.add('hidden');
+    newsletter.classList.add('hidden');
   }
 });
 
 dissmissButton.addEventListener('click', function () {
   // Show newsletter form
-  leftCard.classList.remove('hidden');
-  rightCard.classList.remove('hidden');
+  newsletter.classList.remove('hidden');
 
   // reset email input field to be empty
   input.value = '';
