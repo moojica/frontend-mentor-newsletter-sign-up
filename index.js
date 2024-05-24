@@ -40,7 +40,7 @@ dissmissButton.addEventListener('click', function () {
 });
 
 function validEmail() {
-  const email = document.getElementById('email').value;
+  const email = input.value;
   const reg =
     /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
 
